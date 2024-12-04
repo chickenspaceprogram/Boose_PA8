@@ -1,4 +1,4 @@
-#include "funcs.h"
+#include "../src/my_strlen.h"
 #include <string.h>
 #include <assert.h>
 

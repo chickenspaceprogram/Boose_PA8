@@ -1,5 +1,5 @@
-#ifndef FUNCS_H
-#define FUNCS_H
+#ifndef MY_STRLEN_H
+#define MY_STRLEN_H
 
 #include <stddef.h>
 
