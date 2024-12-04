@@ -15,11 +15,11 @@ int int_cmp(const void *int1, const void *int2) {
 
 void *my_bsearch(const void *target, const void *values, size_t num_values, size_t value_size, int (*compare)(const void *, const void *)) {
     size_t midpt = num_values / 2;
-    int cmp = compare(target, values + midpt * value_size);
+    int cmp = compare(target, (char *)values + midpt * value_size);
     void *new_val_start;
 
     if (cmp == 0) {
-        return (void *)values + midpt * value_size;
+        return (void *)((char *)values + midpt * value_size);
     }
     if (num_values == 1) {
         return NULL; // if there is only 1 value left, return NULL because at this point nothing has been found
@@ -27,7 +27,7 @@ void *my_bsearch(const void *target, const void *values, size_t num_values, size
 
     if (cmp > 0) {
         num_values -= midpt;
-        values += midpt * value_size;
+        values = (void *)((char *)values + midpt * value_size);
     }
     else {
         num_values = midpt;
@@ -42,5 +42,5 @@ int binary_search(int target, int *values, int num_values) {
     if (bsearch_res == NULL) {
         return -1;
     }
-    return (int)(bsearch_res - (void *)values) / sizeof(int);
+    return (int)((char *)bsearch_res - (char *)values) / sizeof(int);
 }
