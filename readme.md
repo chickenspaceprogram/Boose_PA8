@@ -15,5 +15,9 @@ This assumes that you have CMake installed.
 
 ## Windows instructions
 
-- Open the `test` directory in Visual Studio
-- Run the tests
+- Open the `test` directory in Windows Terminal
+- Enter the command `cmake .`
+- Enter the command `cmake --build .`
+- Enter the command `ctest -C Debug`
+
+This assumes you have CMake and Visual Studio installed.
