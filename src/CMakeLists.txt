@@ -4,6 +4,11 @@ project(funcs C)
 set(CMAKE_C_STANDARD 11)
 
 add_library(my_strlen
-    ../src/my_strlen.c
-    ../src/my_strlen.h
+    my_strlen.c
+    my_strlen.h
+)
+
+add_library(binary_search
+    binary_search.c
+    binary_search.h
 )
