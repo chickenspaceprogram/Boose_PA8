@@ -18,4 +18,10 @@ add_library(compare
     compare.h
 )
 
+add_library(bubble_sort
+    bubble_sort.c
+    bubble_sort.h
+)
+
 target_link_libraries(binary_search compare)
+target_link_libraries(bubble_sort compare)

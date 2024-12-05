@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <string.h>
+#include <stdlib.h>
 #include "compare.h"
 
 void bubble_sort_int(int *array, size_t num_elements);
