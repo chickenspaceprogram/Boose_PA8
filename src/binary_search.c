@@ -1,18 +1,5 @@
 #include "binary_search.h"
 
-int int_cmp(const void *int1, const void *int2) {
-    const int int1_val = *(int *)int1;
-    const int int2_val = *(int *)int2;
-    if (int1_val > int2_val) {
-        return 1;
-    }
-
-    if (int1_val < int2_val) {
-        return -1;
-    }
-    return 0;
-}
-
 void *my_bsearch(const void *target, const void *values, size_t num_values, size_t value_size, int (*compare)(const void *, const void *)) {
     size_t midpt = num_values / 2;
     int cmp = compare(target, (char *)values + midpt * value_size);

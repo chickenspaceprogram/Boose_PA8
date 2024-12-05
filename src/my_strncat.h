@@ -1,5 +1,5 @@
-#ifndef MY_STRLEN_H
-#define MY_STRLEN_H
+#ifndef MY_STRNCAT_H
+#define MY_STRNCAT_H
 
 #include <stddef.h>
 

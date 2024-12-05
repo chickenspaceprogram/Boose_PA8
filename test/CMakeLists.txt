@@ -6,22 +6,32 @@ set(CMAKE_BUILD_TYPE Debug)
 
 add_subdirectory(../src ./src)
 
-add_executable(TEST-my_strlen
-    ../tests/TEST-my_strlen.c
+add_executable(TEST-my_strncat
+    ../tests/TEST-my_strncat.c
 )
 
 add_executable(TEST-binary_search
     ../tests/TEST-binary_search.c
 )
 
-target_link_libraries(TEST-my_strlen my_strlen)
+add_executable(TEST-compare
+    ../tests/TEST-compare.c
+)
+
+target_link_libraries(TEST-my_strncat my_strncat)
 target_link_libraries(TEST-binary_search binary_search)
+target_link_libraries(TEST-compare compare)
 
 enable_testing()
 
 add_test(
-    NAME my_strlen
-    COMMAND $<TARGET_FILE:TEST-my_strlen>
+    NAME compare
+    COMMAND $<TARGET_FILE:TEST-compare>
+)
+
+add_test(
+    NAME my_strncat
+    COMMAND $<TARGET_FILE:TEST-my_strncat>
 )
 
 add_test(

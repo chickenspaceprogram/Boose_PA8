@@ -1,22 +1,15 @@
 #include "../src/binary_search.h"
+#include "../src/compare.h"
 #include <assert.h>
 #include <stdlib.h>
 
-void test_int_cmp(void);
+
 void test_bsearch(void);
 void test_binary_search(void);
 
 int main(void) {
-    test_int_cmp();
     test_bsearch();
-}
-
-void test_int_cmp(void) {
-    int int1 = 123;
-    int int2 = 456;
-    assert(int_cmp(&int1, &int2) < 0);
-    assert(int_cmp(&int2, &int1) > 0);
-    assert(int_cmp(&int1, &int1) == 0);
+    test_binary_search();
 }
 
 void test_bsearch(void) {
@@ -43,8 +36,11 @@ void test_bsearch(void) {
 void test_binary_search(void) {
     int int_arr[] = {0, 1, 1, 2, 3, 4, 6, 8, 9, 9, 10};
 
-    for (int i = 0; i < 11; ++i) {
-        assert(binary_search(int_arr[i], int_arr, 11) == i);
-    }
+    
+    assert(binary_search(0, int_arr, 11) == 0);
+    assert(binary_search(2, int_arr, 11) == 3);
+    assert(binary_search(3, int_arr, 11) == 4);
+    assert(binary_search(10, int_arr, 11) == 10);
+    
     assert(binary_search(12345, int_arr, 11) == -1);
 }

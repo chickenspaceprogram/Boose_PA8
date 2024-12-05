@@ -1,4 +1,4 @@
-#include "../src/my_strlen.h"
+#include "../src/my_strncat.h"
 #include <string.h>
 #include <assert.h>
 

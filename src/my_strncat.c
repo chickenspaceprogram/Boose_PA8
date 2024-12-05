@@ -1,4 +1,4 @@
-#include "my_strlen.h"
+#include "my_strncat.h"
 
  
 static size_t my_strlen(char *str);
