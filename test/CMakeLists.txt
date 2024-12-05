@@ -34,6 +34,10 @@ add_executable(TEST-maximum_occurrences
     ../tests/TEST-maximum_occurrences.c
 )
 
+add_executable(TEST-max_consecutive_integers
+    ../tests/TEST-max_consecutive_integers.c
+)
+
 
 target_link_libraries(TEST-my_strncat my_strncat)
 target_link_libraries(TEST-binary_search binary_search)
@@ -42,6 +46,7 @@ target_link_libraries(TEST-bubble_sort bubble_sort)
 target_link_libraries(TEST-is_palindrome is_palindrome)
 target_link_libraries(TEST-sum_primes sum_primes)
 target_link_libraries(TEST-maximum_occurrences maximum_occurrences)
+target_link_libraries(TEST-max_consecutive_integers max_consecutive_integers)
 
 
 
@@ -80,4 +85,9 @@ add_test(
 add_test(
     NAME maximum_occurrences
     COMMAND $<TARGET_FILE:TEST-maximum_occurrences>
+)
+
+add_test(
+    NAME max_consecutive_integers
+    COMMAND $<TARGET_FILE:TEST-max_consecutive_integers>
 )
