@@ -28,5 +28,10 @@ add_library(is_palindrome
     is_palindrome.h
 )
 
+add_library(sum_primes
+    sum_primes.c
+    sum_primes.h
+)
+
 target_link_libraries(binary_search compare)
 target_link_libraries(bubble_sort compare)
