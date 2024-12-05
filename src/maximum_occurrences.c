@@ -1,8 +1,24 @@
 #include "maximum_occurrences.h"
 
 // returns the index of the max occurrence
+/**
+ * Function name: 
+ * Date created: 2024-12-04
+ * Date last modified: 2024-12-04
+ * Description: 
+ * Inputs: 
+ * Outputs: 
+ */
 static int get_max_occurrences(Occurrences *occurrences, int num_occurrences);
 
+/**
+ * Function name: 
+ * Date created: 2024-12-04
+ * Date last modified: 2024-12-04
+ * Description: 
+ * Inputs: 
+ * Outputs: 
+ */
 static void set_frequencies(Occurrences *occurrences, int num_occurrences, int string_len);
 
 void maximum_occurrences(char *string, Occurrences *occurrences, int *max_num_occurrences, char *most_frequent_letter) {

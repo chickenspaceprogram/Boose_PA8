@@ -1,6 +1,23 @@
 #include "sum_primes.h"
 
+/**
+ * Function name: 
+ * Date created: 2024-12-04
+ * Date last modified: 2024-12-04
+ * Description: 
+ * Inputs: 
+ * Outputs: 
+ */
 static inline int is_prime(int num);
+
+/**
+ * Function name: 
+ * Date created: 2024-12-04
+ * Date last modified: 2024-12-04
+ * Description: 
+ * Inputs: 
+ * Outputs: 
+ */
 static int is_prime_recursive(int num, int iter);
 
 unsigned int sum_primes(unsigned int num) {
