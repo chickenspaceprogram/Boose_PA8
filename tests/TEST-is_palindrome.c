@@ -2,6 +2,8 @@
 #include <assert.h>
 #include <string.h>
 
+void test_is_palindrome(void);
+
 int main(void) {
     test_is_palindrome();
 }

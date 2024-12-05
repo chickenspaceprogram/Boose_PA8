@@ -6,7 +6,7 @@ void bubble_sort_int(int *array, size_t num_elements) {
 
 void bubble_sort(void *array, size_t num_elements, size_t width, int (*compare)(const void *, const void *)) {
     void *temp = malloc(width);
-    for (size_t end = num_elements; end > 1; --end) {
+    for (size_t end = num_elements - 1; end > 1; --end) {
         for (size_t marker = 0; marker < end; ++marker) {
             if (compare((char *)array + width * marker, (char *)array + width * (marker + 1)) > 0) {
                 memcpy(temp, (char *)array + width * marker, width); // temp = array[marker]

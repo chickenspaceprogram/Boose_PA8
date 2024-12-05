@@ -23,16 +23,16 @@ add_executable(TEST-bubble_sort
 )
 
 add_executable(TEST-is_palindrome
-    ../tests/TEST-bubble_sort.c
-    ../src/is_palindrome.c
-    ../src/is_palindrome.h
+    ../tests/TEST-is_palindrome.c
 )
+
 
 target_link_libraries(TEST-my_strncat my_strncat)
 target_link_libraries(TEST-binary_search binary_search)
 target_link_libraries(TEST-compare compare)
 target_link_libraries(TEST-bubble_sort bubble_sort)
 target_link_libraries(TEST-is_palindrome is_palindrome)
+
 
 enable_testing()
 
