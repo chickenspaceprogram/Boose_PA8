@@ -1,22 +1,25 @@
 #include "sum_primes.h"
 
 /**
- * Function name: 
+ * Function name: is_prime
  * Date created: 2024-12-04
  * Date last modified: 2024-12-04
- * Description: 
- * Inputs: 
- * Outputs: 
+ * Description: Returns 1 if `num` is prime, 0 otherwise.
+ * Inputs:
+ * `num` : The number to test the primality of
+ * Outputs: 1 if `num` is prime, 0 otherwise.
  */
 static inline int is_prime(int num);
 
 /**
- * Function name: 
+ * Function name: is_prime_recursive
  * Date created: 2024-12-04
  * Date last modified: 2024-12-04
- * Description: 
+ * Description: A recursive function that checks whether a number is prime.
  * Inputs: 
- * Outputs: 
+ * `num` : The number to test the primality of
+ * `iter` : The smallest prime number (always should be 2).
+ * Outputs: 1 if `num` is prime, 0 otherwise.
  */
 static int is_prime_recursive(int num, int iter);
 

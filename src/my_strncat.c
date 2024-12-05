@@ -1,12 +1,13 @@
 #include "my_strncat.h"
 
 /**
- * Function name: 
+ * Function name: my_strlen
  * Date created: 2024-12-04
  * Date last modified: 2024-12-04
- * Description: 
+ * Description: Finds the length of `str`.
  * Inputs: 
- * Outputs: 
+ * `str` : The string to find the length of
+ * Outputs: The length of `str`.
  */
 static size_t my_strlen(char *str);
 

@@ -1,22 +1,26 @@
 #include "maximum_occurrences.h"
 
-// returns the index of the max occurrence
 /**
- * Function name: 
+ * Function name: get_max_occurrences
  * Date created: 2024-12-04
  * Date last modified: 2024-12-04
- * Description: 
+ * Description: Finds the element in `occurrences` with the highest number of occurrences.
  * Inputs: 
- * Outputs: 
+ * `occurrences` : An array containing the number of occurrences of each character in a string.
+ * `num_occurrences` : The size of `occurrences`.
+ * Outputs: The index of the max occurrence.
  */
 static int get_max_occurrences(Occurrences *occurrences, int num_occurrences);
 
 /**
- * Function name: 
+ * Function name: set_frequencies
  * Date created: 2024-12-04
  * Date last modified: 2024-12-04
- * Description: 
+ * Description: Calculates the frequencies of each occurrence in `occurrences`.
  * Inputs: 
+ * `occurrences` : An array containing all the occurrences to calculate the frequencies of
+ * `num_occurrences` : The length of `occurrences`.
+ * `string_len` : The length of the string used to generate `occurrences`.
  * Outputs: 
  */
 static void set_frequencies(Occurrences *occurrences, int num_occurrences, int string_len);
