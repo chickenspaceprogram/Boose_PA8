@@ -30,6 +30,10 @@ add_executable(TEST-sum_primes
     ../tests/TEST-sum_primes.c
 )
 
+add_executable(TEST-maximum_occurrences
+    ../tests/TEST-maximum_occurrences.c
+)
+
 
 target_link_libraries(TEST-my_strncat my_strncat)
 target_link_libraries(TEST-binary_search binary_search)
@@ -37,6 +41,8 @@ target_link_libraries(TEST-compare compare)
 target_link_libraries(TEST-bubble_sort bubble_sort)
 target_link_libraries(TEST-is_palindrome is_palindrome)
 target_link_libraries(TEST-sum_primes sum_primes)
+target_link_libraries(TEST-maximum_occurrences maximum_occurrences)
+
 
 
 enable_testing()
@@ -69,4 +75,9 @@ add_test(
 add_test(
     NAME sum_primes
     COMMAND $<TARGET_FILE:TEST-sum_primes>
+)
+
+add_test(
+    NAME maximum_occurrences
+    COMMAND $<TARGET_FILE:TEST-maximum_occurrences>
 )
