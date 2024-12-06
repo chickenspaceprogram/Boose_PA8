@@ -6,12 +6,12 @@ Each function is separated out into its own file so that I can use CTest and a s
 
 To test this code, do the following:
 
-- `cd` into the `test` directory 
+- `cd` into the `test` directory using a terminal
 - enter the command `cmake .`
 - enter the command `cmake --build .`
 - enter the command `ctest`
 
-This assumes that you have CMake installed.
+This assumes that you have CMake installed. If you do not have CMake installed, install it from https://cmake.org/download/ or use your preferred package manager.
 
 ## Windows instructions
 
