@@ -2,4 +2,4 @@
 build/**
 test/**
 !CMakeLists.txt
-
+.vscode/
